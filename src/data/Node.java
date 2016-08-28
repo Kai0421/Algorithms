@@ -8,6 +8,8 @@ package data;
 
 public class Node {
 	private int data;
+	
+	//nextNode also = RightChild, PrevNode = LeftChild for Binary Tree
 	private Node nextNode, prevNode;
 	
 	public Node(int data){
