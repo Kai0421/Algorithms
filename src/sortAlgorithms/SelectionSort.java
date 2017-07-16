@@ -45,4 +45,25 @@ public class SelectionSort extends BaseSortingAlgorithm {
 		return smallestValueIndex;
 	}
 	
+	/**
+	 * @description : Recursion Selection Sorting
+	 * @param numberArray
+	 * @param counter
+	 * @return
+	 */
+	public int[] recursionSelectionSorter(int[] numberArray, int counter){
+		
+		if(counter <= numberArray.length - 1)
+		{
+			int indexOfSmallestValue = findSmallestValue(counter, numberArray);
+			int temp = numberArray[counter];
+			numberArray[counter] = numberArray[indexOfSmallestValue];
+			numberArray[indexOfSmallestValue] = temp;
+			
+			counter++;
+			recursionSelectionSorter(numberArray, counter);
+		}
+		
+		return numberArray;
+	}
 }
