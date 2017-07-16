@@ -3,8 +3,8 @@ package tests;
 import org.junit.Test;
 import org.junit.runners.JUnit4;
 
-import algorithms.LinkedList;
 import data.Node;
+import searchAlgorithms.LinkedList;
 
 /**
  * 

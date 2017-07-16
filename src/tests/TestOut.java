@@ -4,8 +4,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
-import algorithms.BinarySearchTree;
+import searchAlgorithms.BinarySearchTree;
 
+/**
+ * 
+ * @author Kai
+ *
+ */
 public class TestOut {
 
 	public static void main(String[] args) {

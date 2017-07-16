@@ -2,7 +2,7 @@ package tests;
 
 import org.junit.Test;
 
-import algorithms.BinarySearchTree;
+import searchAlgorithms.BinarySearchTree;
 
 /**
  * 

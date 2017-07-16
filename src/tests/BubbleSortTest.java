@@ -1,10 +1,15 @@
 package tests;
 
-import algorithms.BubbleSortAlgorithm;
+import sortAlgorithms.BubbleSort;
 
+/**
+ * 
+ * @author Kai
+ *
+ */
 public class BubbleSortTest {
-	private BubbleSortAlgorithm bsa = new BubbleSortAlgorithm();
-	private final int[] numbers = { 1, 4, 2, 3, 4, 7 };
+	private BubbleSort bs = new BubbleSort();
+	private final int[] numbers = { 1, 4, 2, 3, 4, 7, 1 };
 
 	public BubbleSortTest() {
 		loopBubbleSorter("Loop Bubble Sorter");
@@ -12,11 +17,11 @@ public class BubbleSortTest {
 	}
 	
 	private void loopBubbleSorter(String title) {
-		bsa.print(title, bsa.SortingProcessWithLoop(numbers));
+		bs.print(title, bs.loopsBubbleSorter(numbers));
 	}
 	
 	private void recursiveBubbleSorter(String title){
-		bsa.print(title, bsa.SortProcessWithRecursive(numbers, 0, 0, numbers.length));
+		bs.print(title, bs.recursionBubbleSorter(numbers, 0, 0, numbers.length));
 	}
 	
 	public static void main(String[] args) {

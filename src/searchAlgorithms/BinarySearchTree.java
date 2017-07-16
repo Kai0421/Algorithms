@@ -1,4 +1,4 @@
-package algorithms;
+package searchAlgorithms;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,10 +21,10 @@ public class BinarySearchTree {
 	private ArrayList<Integer> nodes;// = new ArrayList<>();
 	
 	/**
-	 * If data < node, traverse left child
-	 * If data > node, traverse right child
+	 * @description :  If data < node, traverse left child
+	 * 				   If data > node, traverse right child
 	 * 
-	 *  Can't traverse then add new node.
+	 * 				   Can't traverse then add new node.
 	 * @param data
 	 */
 	public void add(int data){
@@ -60,7 +60,8 @@ public class BinarySearchTree {
 	}
 	
 	/**
-	 * Pass through all the children.
+	 * @description : Pass through all the children.
+	 * @param treeBalancing
 	 */
 	public void childTraversing(boolean treeBalancing){
 		
@@ -73,6 +74,11 @@ public class BinarySearchTree {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param node
+	 * @param treeBalancing
+	 */
 	private void inOrderTraversing(Node node, boolean treeBalancing){
 		
 		System.out.println(node.toString());
@@ -88,8 +94,9 @@ public class BinarySearchTree {
 	}
 	
 	/**
-	 * Make the tree to balance : This function does not make a correct Binary Search Tree but instead is trying to re-elect Root node,
-	 * this will give the tree and even number side of the leaves node. 
+	 * @description :  Make the tree to balance : This function does not make a correct Binary Search Tree but
+	 * 				   instead is trying to re-elect Root node, * this will give the tree and even number side 
+	 * 				   of the leaves node. 
 	 */
 	public void treeBalancing(){
 		
@@ -104,7 +111,8 @@ public class BinarySearchTree {
 	}
 	
 	/**
-	 * De-construct the tree by setting the child traversing to true in parameter and the add each node into a list
+	 * @description :  De-construct the tree by setting the child traversing to true in parameter and the add 
+	 * 				   each node into a list
 	 * 
 	 */
 	private void treeDeconstruction(){
@@ -120,7 +128,8 @@ public class BinarySearchTree {
 	}
 	
 	/**
-	 * Reconstruct the tree by finding the mid point of the list to create a complete tree with identical branches each side.
+	 * @description :  Reconstruct the tree by finding the mid point of the list to create a complete tree with
+	 * 				   identical branches each side.
 	 * 
 	 */
 	private void treeReconstruction(){
@@ -134,7 +143,7 @@ public class BinarySearchTree {
 	}
 	
 	/**
-	 * Sorting according to midpoint
+	 * @description :  Sorting according to midpoint
 	 * @return
 	 */
 	private ArrayList<Integer> midPointSorting(ArrayList<Integer> nodes){
@@ -154,7 +163,8 @@ public class BinarySearchTree {
 	}
 	
 	/**
-	 * Look for the mid point as the parent, if the modulo return 0 which mean is even then add 1 to the list.
+	 * @description :  Look for the mid point as the parent, if the modulo return 0 which mean is even then 
+	 * 				   add 1 to the list.
 	 * @param nodes
 	 * @return
 	 */

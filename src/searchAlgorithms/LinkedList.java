@@ -1,4 +1,4 @@
-package algorithms;
+package searchAlgorithms;
 
 import data.Node;
 
@@ -13,7 +13,7 @@ public class LinkedList {
 	private Node head, tail;
 	
 	/**
-	 * Loop through the list to find the data
+	 * @description : Loop through the list to find the data
 	 * @param data
 	 * @return
 	 */
@@ -34,7 +34,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Delete a particular node
+	 * @description : Delete a particular node
 	 * 
 	 	//Scenario 1 : if the targeted node is the head node
 		//Scenario 2 : if the targeted node is the tail node
@@ -93,7 +93,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Passed in the target delete node, then sort the list
+	 * @description : Passed in the target delete node, then sort the list
 	 * @param node
 	 */
 	private Node reSortList(Node targetedNode){
@@ -128,7 +128,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Reverse to the start of the list for printing out purpose
+	 * @description : Reverse to the start of the list for printing out purpose
 	 * @param node
 	 * @return
 	 */
@@ -142,7 +142,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Adding node into the list (Doubly linkedList)
+	 * @description : Adding node into the list (Doubly linkedList)
 	 * @param data
 	 */
 	public void add(int data){
@@ -187,7 +187,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 *  Print the Linked List
+	 *  @description : Print the Linked List
 	 */
 	public void print(){
 		//Check if it's the head Node
